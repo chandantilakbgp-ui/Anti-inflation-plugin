@@ -1,0 +1,21 @@
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "minecraft"
+  username: "root"
+  password: "password"
+  ssl: false
+  max-pool-size: 10
+
+settings:
+  eval-interval-seconds: 10
+  items-per-chunk-threshold: 150
+
+taxing:
+  increment-rate: 0.01
+  max-tax-multiplier: 0.30
+
+messages:
+  prefix: "&7[&aEcoEco&7] "
+  alert-taxed: "&cWarning: High automation detected! Industrial optimization taxes are currently mitigating market payouts."
+  
