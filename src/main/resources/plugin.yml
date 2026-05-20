@@ -1,0 +1,21 @@
+name: EcoEco
+version: 1.3.0
+main: com.ecoeco.EcoEco
+api-version: 1.16
+depend: [Vault]
+softdepend: [ShopGUIPlus]
+authors: [Arnav]
+description: Advanced high performance dynamic anti-inflation engine framework with HikariCP MySQL database pooling.
+commands:
+  ecoeco:
+    description: Core administrative control execution point.
+    permission: ecoeco.admin
+    usage: /<command> [reload]
+permissions:
+  ecoeco.admin:
+    description: Allows full reloading access parameters.
+    default: op
+  ecoeco.bypass:
+    description: Bypasses automated baseline chunk monitoring tax penalties completely.
+    default: false
+    
