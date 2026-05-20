@@ -24,9 +24,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
+    # Wildcard path guarantees it catches the shaded JAR regardless of version numbers
     - name: Upload Compiled Plugin Artifact
       uses: actions/upload-artifact@v4
       with:
         name: EcoEco-Plugin
-        path: target/EcoEco-1.3.0.jar
+        path: target/*.jar
         
